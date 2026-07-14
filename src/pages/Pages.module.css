@@ -1,0 +1,31 @@
+.page {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  gap: .4rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+
+  color: #111827;
+}
+
+.header p {
+  color: #6b7280;
+}
+
+.cards {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 1.5rem;
+}

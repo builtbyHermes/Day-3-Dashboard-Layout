@@ -1,0 +1,55 @@
+.layout {
+  display: grid;
+
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 72px 1fr;
+
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+
+  min-height: 100vh;
+
+  background-color: #f9fafb;
+}
+
+/* Sidebar */
+
+.sidebar {
+  grid-area: sidebar;
+
+  background: #ffffff;
+
+  border-right: 1px solid #e5e7eb;
+
+  overflow-y: auto;
+}
+
+/* Header */
+
+.header {
+  grid-area: header;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 2rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Main Content */
+
+.content {
+  grid-area: content;
+
+  padding: 2rem;
+
+  overflow-y: auto;
+}

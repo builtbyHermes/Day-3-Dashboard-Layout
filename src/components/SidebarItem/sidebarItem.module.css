@@ -1,0 +1,42 @@
+.item {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 0.9rem 1rem;
+
+  text-decoration: none;
+
+  color: #6b7280;
+
+  border-radius: 10px;
+
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  background: #f3f4f6;
+
+  color: #111827;
+}
+
+.active {
+  background: #2563eb;
+
+  color: #ffffff;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+}
+
+.label {
+  font-size: 0.95rem;
+
+  font-weight: 500;
+}

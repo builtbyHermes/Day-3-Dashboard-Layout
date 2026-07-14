@@ -1,0 +1,38 @@
+.header {
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.menuButton {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+
+  .menuButton {
+    display: block;
+  }
+
+}
