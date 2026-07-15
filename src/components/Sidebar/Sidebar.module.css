@@ -4,7 +4,7 @@
 
   height: 100%;
 
-  background: #ffffff;
+  background: #000000;
 }
 
 .logo {
@@ -22,7 +22,7 @@
   font-size: 1.4rem;
   font-weight: 700;
 
-  color: #111827;
+  color: #e7e7e7;
 }
 
 .navigation {

@@ -9,19 +9,23 @@ import ForgotPassword from "../features/auth/ForgotPassword";
 import ResetPassword from "../features/auth/ResetPassword";
 import VerifyEmail from "../features/auth/VerifyEmail";
 
-import {
-  Dashboard,
-  Analytics,
-  Users,
-  Messages,
-  Settings,
-} from "../pages";
+import Spinner from "../components/Spinner/spinner";
 
 import ProtectedRoute from "./ProtectedRoute";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+
+const Dashboard = lazy(() => import("../pages/Dashboard"));
+const Analytics = lazy(() => import("../pages/Analytics"));
+const Users = lazy(() => import("../pages/Users"));
+const Messages = lazy(() => import("../pages/Messages"));
+const Settings = lazy(() => import("../pages/Settings"));
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+     <Suspense fallback={<Spinner size="large" />}>
       <Routes>
 
         {/* Redirect */}
@@ -72,8 +76,21 @@ function AppRoutes() {
         </Route>
 
       </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
 
 export default AppRoutes;
+
+
+// this will be inefficient in page loading ,as it will try to download all pages at once
+// import {
+//   Dashboard,
+//   Analytics,
+//   Users,
+//   Messages,
+//   Settings,
+// } from "../pages";
+
+// so we will rather use lazy loading

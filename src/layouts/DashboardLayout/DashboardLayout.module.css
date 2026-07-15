@@ -10,17 +10,16 @@
 
   min-height: 100vh;
 
-  background-color: #f9fafb;
+  background-color: #000000;
 }
 
 /* Sidebar */
 
 .sidebar {
   grid-area: sidebar;
-
-  background: #ffffff;
-
-  border-right: 1px solid #e5e7eb;
+  
+  background: #000000;
+  color: #000000;
 
   overflow-y: auto;
 }
@@ -29,14 +28,14 @@
 
 .header {
   grid-area: header;
+  position:absolute;
+  background:none;
 
-  background: #ffffff;
-
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: none;
 
   display: flex;
-  align-items: center;
-
+  align-items: right;
+  box-sizing: content-box;
   padding: 0 2rem;
 
   position: sticky;

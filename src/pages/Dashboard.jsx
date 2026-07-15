@@ -14,7 +14,7 @@ function Dashboard() {
     <section className={styles.page}>
       <div className={styles.header}>
         <h1>Dashboard</h1>
-        <p>Welcome back 👋</p>
+        <p>Welcome back </p>
       </div>
 
       <div className={styles.cards}>

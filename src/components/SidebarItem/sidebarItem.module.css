@@ -7,8 +7,8 @@
   padding: 0.9rem 1rem;
 
   text-decoration: none;
-
-  color: #6b7280;
+  background-color: #212121;
+  color: #FFFFFF;
 
   border-radius: 10px;
 
@@ -16,15 +16,15 @@
 }
 
 .item:hover {
-  background: #f3f4f6;
+  background: #212121;
 
-  color: #111827;
+  color: #949494;
 }
 
 .active {
-  background: #2563eb;
+  background: #515151;
 
-  color: #ffffff;
+  color: #f3f3f3;
 }
 
 .icon {

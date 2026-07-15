@@ -12,9 +12,9 @@ function DashboardLayout() {
         <Sidebar />
       </aside>
 
-      <header className={styles.header}>
+      <div className={styles.header}>
         <Header />
-      </header>
+      </div>
 
       <main className={styles.content}>
         <Outlet />
